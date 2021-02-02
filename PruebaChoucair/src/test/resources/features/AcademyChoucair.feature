@@ -12,7 +12,7 @@
     | 1068664830 | Choucair2021*|
     When she search for the course on the Choucair academy plataform
     | strCourse |
-    | Metodologia Bancolombia|
+    | Recursos Automatizacion Bancolombia|
     Then he finds the course called
       | strCourse |
-      | Metodologia Bancolombia|
+      | Recursos Automatizacion Bancolombia|

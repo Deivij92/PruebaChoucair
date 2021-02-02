@@ -27,13 +27,13 @@ public class ChoucairAcademyStepDefinitions {
                 Login.onThePage(academyChoucairDataList.get(0).getStrUser(), academyChoucairDataList.get(0).getStrPassword()));
     }
 
-    @When("^she search for the course on the Choucair academy plataform$")
+    @When("^she search for the course on the Choucair academy plataform (.*)$")
     public void sheSearchForTheCourseOnTheChoucairAcademyPlataform(List<AcademyChoucairData> academyChoucairData)  throws Exception{
         OnStage.theActorInTheSpotlight().attemptsTo(Search.the(academyChoucairData.get(0).getStrCourse()));
     }
 
 
-    @Then("^he finds the course called$")
+    @Then("^he finds the course called (.*)$")
     public void heFindsTheCourseCalled(List<AcademyChoucairData> academyChoucairData, String question) throws Exception{
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
     }
