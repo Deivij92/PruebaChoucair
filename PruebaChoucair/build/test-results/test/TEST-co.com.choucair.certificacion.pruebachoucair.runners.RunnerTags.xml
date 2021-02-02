@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.choucair.certificacion.pruebachoucair.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-PS3T0DM" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@2de2ea3f
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@6d58cab4
 
 1 Scenarios (?[33m1 undefined?[0m)
 3 Steps (?[33m2 undefined?[0m, ?[32m1 passed?[0m)
-0m55,654s
+0m47,971s
 
 
 You can implement missing steps with the snippets below:
