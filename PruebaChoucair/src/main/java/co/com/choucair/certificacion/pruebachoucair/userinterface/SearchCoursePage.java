@@ -5,8 +5,8 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class SearchCoursePage extends PageObject {
-    public static final Target BUTTON_UC = Target.the("Selecciona la universidad choucair").
-            located(By.xpath("//div[@id = 'universidad']//strong"));
+    public static final Target BUTTON_UC = Target.the("Cursos y Certificaciones").
+            located(By.xpath("//div[@id = 'certificaciones']//strong"));
     public static final Target INPUT_COURSE = Target.the("Buscar el curso").
             located(By.id("coursesearchbox"));
     public static final Target BOTTON_GO = Target.the("Da clik para buscar el curso").

@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.choucair.certificacion.pruebachoucair.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-PS3T0DM" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@6d58cab4
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@562b1eab
 
-1 Scenarios (?[33m1 undefined?[0m)
-3 Steps (?[33m2 undefined?[0m, ?[32m1 passed?[0m)
-0m47,971s
+1 Scenarios (?[33m1 pending?[0m)
+3 Steps (?[36m2 skipped?[0m, ?[33m1 pending?[0m)
+1m13,465s
 
-
-You can implement missing steps with the snippets below:
-
-
-@When("^she search for the course on the Choucair academy plataform$")
-public void sheSearchForTheCourseOnTheChoucairAcademyPlataform(DataTable arg1) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
-    // E,K,V must be a scalar (String, Integer, Date, enum etc).
-    // Field names for YourType must match the column names in 
-    // your feature file (except for spaces and capitalization).
-    throw new PendingException();
-}
-
-@Then("^he finds the course called$")
-public void heFindsTheCourseCalled(DataTable arg1) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
-    // E,K,V must be a scalar (String, Integer, Date, enum etc).
-    // Field names for YourType must match the column names in 
-    // your feature file (except for spaces and capitalization).
-    throw new PendingException();
-}
+cucumber.api.PendingException: TODO: implement me
+	at co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.thanRoseWantToLearnAutomationAtTheAcademyChoucair(ChoucairAcademyStepDefinitions.java:29)
+	at ?.than Rose want to learn automation at the Academy Choucair(src/test/resources/features/AcademyChoucair.feature:10)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
