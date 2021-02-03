@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-02-2021 16:12</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-02-2021 16:45</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,9 +179,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">Search for a automation course
+                                <span class="failing-color">Search for a automation course
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -198,20 +198,76 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.Search.performAs(Search.java:24)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseOnTheChoucairAcademyPlataform(ChoucairAcademyStepDefinitions.java:34)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //h4[contains(text(), 'Metodologia Bancolombia')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.Search.performAs(Search.java :24)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseOnTheChoucairAcademyPlataform(ChoucairAcademyStepDefinitions.java :34)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource5785791578310514927.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="fa1668f49c76263a7b9295edba31973bb5d52dc9222a5ab910cbfa9c55fd8eb0.png" title=" Given than Rose want to learn automation at the Academy Choucair
+                <img src="1b768f07633b13b6e0172b4758660ecf9698f8664e70670a5013a1a9de1f3671.png" title=" Given than Rose want to learn automation at the Academy Choucair
 | strUser | strPassword |
-| 1068664830 | Choucair2021* |" width="1366"/>
-                <img src="fa1668f49c76263a7b9295edba31973bb5d52dc9222a5ab910cbfa9c55fd8eb0.png" title=" Rose open up" width="1366"/>
-                <img src="fa1668f49c76263a7b9295edba31973bb5d52dc9222a5ab910cbfa9c55fd8eb0.png" title=" Rose opens the Choucair academy page" width="1366"/>
-                <img src="fa1668f49c76263a7b9295edba31973bb5d52dc9222a5ab910cbfa9c55fd8eb0.png" title=" Rose open up (completed)" width="1366"/>
-                <img src="2fb2ff1eb4f5c0cf1ef800f86faa1cce898947ac2cb6a03b65e72e888b6237e1.png" title=" Rose login" width="1366"/>
-                <img src="2fb2ff1eb4f5c0cf1ef800f86faa1cce898947ac2cb6a03b65e72e888b6237e1.png" title=" Rose clicks on button that show us the form to login" width="1366"/>
-                <img src="57680b3c3080115a23c23aeddfac0617165a4e8ece653f175e092c203f9a2b41.png" title=" Rose enters '1068664830' into where do we write the user" width="1366"/>
-                <img src="d97be6ae6fc16fb651f68d3ab48f9abb1017b3a0a30ddce569a8d14cb5768f40.png" title=" Rose enters 'Choucair2021*' into where do we write the password" width="1366"/>
-                <img src="82336556d00f3e9c8c631df45c36dd1683f830dbdc607995a506c5a118be16db.png" title=" Rose clicks on button that show us the form to login" width="1366"/>
-                <img src="82336556d00f3e9c8c631df45c36dd1683f830dbdc607995a506c5a118be16db.png" title=" Rose login (completed): <span class='pending-color'>PENDING</span>" width="1366"/>
+| 1068664830 | Choucair2021* |" width="1920"/>
+                <img src="1b768f07633b13b6e0172b4758660ecf9698f8664e70670a5013a1a9de1f3671.png" title=" Rose open up" width="1920"/>
+                <img src="1b768f07633b13b6e0172b4758660ecf9698f8664e70670a5013a1a9de1f3671.png" title=" Rose opens the Choucair academy page" width="1920"/>
+                <img src="1b768f07633b13b6e0172b4758660ecf9698f8664e70670a5013a1a9de1f3671.png" title=" Rose open up (completed)" width="1920"/>
+                <img src="1d31113d186b278be04b690ace08a683f94dff16d8ba456c51ae107729c0d094.png" title=" Rose login" width="1920"/>
+                <img src="1d31113d186b278be04b690ace08a683f94dff16d8ba456c51ae107729c0d094.png" title=" Rose clicks on button that show us the form to login" width="1920"/>
+                <img src="0e4a70a081e14d40aac5b54d25802ad7b939aecfd1ba9d6a92a05a6aca351d30.png" title=" Rose enters '1068664830' into where do we write the user" width="1920"/>
+                <img src="8e06f5fcb86dfa5b60cc421edb08734c1bc6e2cc3d504e54b75d58def919c4a3.png" title=" Rose enters 'Choucair2021*' into where do we write the password" width="1920"/>
+                <img src="980ccc1a0bea49b707ec33bfd1aca98207885417b1492cb75ecec46ced9289e9.png" title=" Rose clicks on button that show us the form to login" width="1920"/>
+                <img src="980ccc1a0bea49b707ec33bfd1aca98207885417b1492cb75ecec46ced9289e9.png" title=" Rose login (completed)" width="1920"/>
+                <img src="980ccc1a0bea49b707ec33bfd1aca98207885417b1492cb75ecec46ced9289e9.png" title=" Given than Rose want to learn automation at the Academy Choucair
+| strUser | strPassword |
+| 1068664830 | Choucair2021* | (completed)" width="1920"/>
+                <img src="1c921accb4e60943f1cdc58084b930c1de4595aa9b486606dd2f64ccf27d4a60.png" title=" When she search for the course on the Choucair academy plataform
+| strCourse |
+| Metodologia Bancolombia |" width="1920"/>
+                <img src="1c921accb4e60943f1cdc58084b930c1de4595aa9b486606dd2f64ccf27d4a60.png" title=" Rose clicks on Cursos y Certificaciones" width="1920"/>
+                <img src="1c1ee7b26c269f9a1e99d82a8b4f39b9cfae295104d2652824cda14f42a98bdd.png" title=" Rose enters 'Metodologia Bancolombia' into Buscar el curso" width="1920"/>
+                <img src="e433932ba28bfd018996a3f92c39a9e698f65f99ac7fe3fdef2bec9e27492176.png" title=" Rose clicks on Da clik para buscar el curso" width="1920"/>
+                <img src="e433932ba28bfd018996a3f92c39a9e698f65f99ac7fe3fdef2bec9e27492176.png" title=" Rose clicks on Da click para buscar el curso: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

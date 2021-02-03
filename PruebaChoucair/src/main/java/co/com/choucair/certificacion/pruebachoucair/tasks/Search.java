@@ -15,11 +15,12 @@ public class Search implements Task {
         this.course = course;
     }
 
-    public static Search the(String course){
+    public static Search the(String strCourse){
         return Tasks.instrumented(Search.class);
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
+         SearchCoursePage.BUTTON_UC.called(course);
         actor.attemptsTo(Click.on(SearchCoursePage.BUTTON_UC),
                 Enter.theValue(course).into(SearchCoursePage.INPUT_COURSE),
                 Click.on(SearchCoursePage.BOTTON_GO),
