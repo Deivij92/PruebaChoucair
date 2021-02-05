@@ -7,9 +7,9 @@
   @scenario1
 
   Scenario: Search for a automation course
-    Given than Rose want to learn automation at the Academy Choucair
-    | strUser    | strPassword|
-    | 1068664830 | Choucair2021*|
+    Given than Deivis wants to complete a form telling us about him and his location
+      | firtsname | lastname| email| monthBirth|
+      | Deivis    | Miranda | deivis@gmail.com| January|
     When she search for the course on the Choucair academy plataform
     | strCourse |
     | Metodologia Bancolombia|

@@ -14,4 +14,6 @@ public class ChoucairLoginPage  {
             located(By.id("password"));
     public static final Target ENTER_BUTTON = Target.the("button that show us the form to login").
             located(By.xpath("//button[contains(@class, 'btn btn-primary')]"));
+
+
 }

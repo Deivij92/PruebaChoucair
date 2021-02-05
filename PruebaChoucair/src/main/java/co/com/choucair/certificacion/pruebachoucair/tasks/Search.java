@@ -21,7 +21,7 @@ public class Search implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
          SearchCoursePage.BUTTON_UC.called(course);
-        actor.attemptsTo(Click.on(SearchCoursePage.BUTTON_UC),
+         actor.attemptsTo(Click.on(SearchCoursePage.BUTTON_UC),
                 Enter.theValue(course).into(SearchCoursePage.INPUT_COURSE),
                 Click.on(SearchCoursePage.BOTTON_GO),
                 Click.on(SearchCoursePage.SELECT_COURSE));

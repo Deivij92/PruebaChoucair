@@ -13,7 +13,6 @@ public class SearchCoursePage {
             located(By.xpath("//button[contains(@class, 'btn btn-secondary')]"));
     public static final Target SELECT_COURSE = Target.the("Da click para buscar el curso").
             located(By.xpath("//h4[contains(text(), 'Metodologia Bancolombia')]"));
-
     public static final Target NAME_COURSE = Target.the("Extrae el nombre del curso")
             .located(By.xpath("//h4[contains(text(), 'Metodologia Bancolombia')]"));
 }
