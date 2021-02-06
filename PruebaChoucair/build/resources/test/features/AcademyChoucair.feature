@@ -8,8 +8,8 @@
 
   Scenario: Search for a automation course
     Given than Deivis wants to complete a form telling us about him and his location
-      | firtsname | lastname| email| monthBirth|
-      | Deivis    | Miranda | deivis@gmail.com| January|
+      | firtsname | lastname| email| monthBirth| dayBirth| yearBirth|
+      | Deivis    | Miranda | deivis@gmail.com| May| 5   | 1992     |
     When she search for the course on the Choucair academy plataform
     | strCourse |
     | Metodologia Bancolombia|

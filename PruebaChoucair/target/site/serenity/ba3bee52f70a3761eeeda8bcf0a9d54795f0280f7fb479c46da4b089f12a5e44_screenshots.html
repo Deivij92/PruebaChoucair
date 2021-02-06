@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-02-2021 17:50</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-02-2021 19:39</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,9 +179,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Search for a automation course
+                                <span class="error-color">Search for a automation course
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -204,7 +204,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Null pointer exception</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -220,20 +220,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>java.lang.NullPointerException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.JoinLocation.performAs(JoinLocation.java:32)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.thanDeivisWantsToCompleteAFormTellingUsAboutHimAndHisLocation(ChoucairAcademyStepDefinitions.java:28)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.Search.the(Search.java:19)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseOnTheChoucairAcademyPlataform(ChoucairAcademyStepDefinitions.java:35)<br />✽.she search for the course on the Choucair academy plataform(src/test/resources/features/AcademyChoucair.feature:13)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //div//div[@class='ui-select-box']//div[@class='col-xs-5 col-md-5 col-lg-5 months']//select[@id='birthMonth']/option[January] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.JoinLocation.performAs(JoinLocation.java :32)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.thanDeivisWantsToCompleteAFormTellingUsAboutHimAndHisLocation(ChoucairAcademyStepDefinitions.java :28)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -241,23 +234,34 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource1923990375385732390.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource9184648729948218183.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Given than Deivis wants to complete a form telling us about him and his location
-| firtsname | lastname | email | monthBirth |
-| Deivis | Miranda | deivis@gmail.com | January |" width="1366"/>
-                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Deivis open up" width="1366"/>
-                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Deivis opens the Choucair academy page" width="1366"/>
-                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Deivis open up (completed)" width="1366"/>
+                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Given than Deivis wants to complete a form telling us about him and his location
+| firtsname | lastname | email | monthBirth | dayBirth | yearBirth |
+| Deivis | Miranda | deivis@gmail.com | May | 5 | 1992 |" width="1366"/>
+                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Deivis open up" width="1366"/>
+                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Deivis opens the Choucair academy page" width="1366"/>
+                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Deivis open up (completed)" width="1366"/>
                 <img src="ec529e60fa1f8f143435ba635fbf9953cb9703d1fb58938d381e9ca240bcf17d.png" title=" Deivis join location" width="1366"/>
                 <img src="ec529e60fa1f8f143435ba635fbf9953cb9703d1fb58938d381e9ca240bcf17d.png" title=" Deivis clicks on button that shows us the form for user registration" width="1366"/>
-                <img src="ff657c30475a23ad857eecd34234d55cb7951bb6fc19da51f1731ed640a49698.png" title=" Deivis enters 'Deivis' into where we write first name" width="1366"/>
-                <img src="18e2ae8eb64d3dd77b28fb64e008e758e0462f70e9425186e33b2d78283949f7.png" title=" Deivis enters 'Deivis' into where we write last names" width="1366"/>
-                <img src="4ddaf9d59d1da37595278fb962a1f8c85645fed50aecc427d16b6158a46e2401.png" title=" Deivis enters 'deivis@gmail.com' into where we write last names" width="1366"/>
-                <img src="4c3be35dada9a338627d3c356afbaeffddf355e63ca469d3636a6bc3532f6eee.png" title=" Deivis enters 'January' into where we write last names: <span class='failing-color'>FAILURE</span>" width="1366"/>
+                <img src="e2a7ccc7c44558019d361d796504f497c4fddef72fdf01847d5c22376de0f75e.png" title=" Deivis enters 'Deivis' into where we write first name" width="1366"/>
+                <img src="b8b22f9aadbfa0b19dae4056a7a70d84ecd7467e9da024c75300d8194575d2e0.png" title=" Deivis enters 'Miranda' into where we write last names" width="1366"/>
+                <img src="95ff43afe396e506762b714940349c556b7ea5f80161fb736f8c0334e5b66518.png" title=" Deivis enters 'deivis@gmail.com' into where we write last names" width="1366"/>
+                <img src="2ad3478bc00f1e16deaa3115e2924e6b85851a238a8c11bc49225921e0738422.png" title=" Deivis clicks on where we write month birth" width="1366"/>
+                <img src="f58506f033509b0041b57d6758efd6206a016bdafe851cafb9ebdcb34cd5040a.png" title=" Deivis clicks on button that shows us the form to add location" width="1366"/>
+                <img src="bbe45b80b52e13362d13cca9793480686ef8f11db9f52f83759dbf5e19d5ef01.png" title=" Deivis clicks on where we write day birth" width="1366"/>
+                <img src="2da0af82931b8ba5d85ad0b0aa5182119070a7bbf716fa1effc251bee33a0f32.png" title=" Deivis clicks on where we write year birth" width="1366"/>
+                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" Deivis clicks on button that shows us the form to add location" width="1366"/>
+                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" Deivis join location (completed)" width="1366"/>
+                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" Given than Deivis wants to complete a form telling us about him and his location
+| firtsname | lastname | email | monthBirth | dayBirth | yearBirth |
+| Deivis | Miranda | deivis@gmail.com | May | 5 | 1992 | (completed)" width="1366"/>
+                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" When she search for the course on the Choucair academy plataform
+| strCourse |
+| Metodologia Bancolombia |: <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 

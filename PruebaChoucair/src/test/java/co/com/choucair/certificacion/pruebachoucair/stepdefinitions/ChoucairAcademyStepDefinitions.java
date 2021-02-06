@@ -25,8 +25,8 @@ public class ChoucairAcademyStepDefinitions {
 
     @Given("^than Deivis wants to complete a form telling us about him and his location$")
     public void thanDeivisWantsToCompleteAFormTellingUsAboutHimAndHisLocation(List<UtestData> academyChoucairDataList) throws Exception{
-        OnStage.theActorCalled("Deivis").wasAbleTo(OpenUp.thePage(), JoinLocation.onThePage(academyChoucairDataList.get(0).getFirtsname(), academyChoucairDataList.get(0).getFirtsname(), academyChoucairDataList.get(0).getEmail(),
-                academyChoucairDataList.get(0).getMonthBirth()));
+        OnStage.theActorCalled("Deivis").wasAbleTo(OpenUp.thePage(), JoinLocation.onThePage(academyChoucairDataList.get(0).getFirtsname(), academyChoucairDataList.get(0).getLastname(), academyChoucairDataList.get(0).getEmail(),
+                academyChoucairDataList.get(0).getMonthBirth(), academyChoucairDataList.get(0).getDayBirth(), academyChoucairDataList.get(0).getYearBirth()));
         // throw new PendingException();
     }
 
