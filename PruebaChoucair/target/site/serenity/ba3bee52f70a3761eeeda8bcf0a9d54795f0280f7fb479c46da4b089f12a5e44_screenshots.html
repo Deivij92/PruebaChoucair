@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-02-2021 19:39</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-02-2021 22:43</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,9 +179,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Search for a automation course
+                                <span class="failing-color">Search for a automation course
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -204,7 +204,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Null pointer exception</span>
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -220,13 +220,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>java.lang.NullPointerException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.Search.the(Search.java:19)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseOnTheChoucairAcademyPlataform(ChoucairAcademyStepDefinitions.java:35)<br />✽.she search for the course on the Choucair academy plataform(src/test/resources/features/AcademyChoucair.feature:13)<br /></pre>
+                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.PasswordTask.performAs(PasswordTask.java:23)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.recordAllYourData(ChoucairAcademyStepDefinitions.java:42)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //div//div//a//span//font//font[@style = 'vertical-align: inherit;'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.choucair.certificacion.pruebachoucair.tasks.PasswordTask.performAs(PasswordTask.java :23)<br />co.com.choucair.certificacion.pruebachoucair.stepdefinitions.ChoucairAcademyStepDefinitions.recordAllYourData(ChoucairAcademyStepDefinitions.java :42)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,34 +241,55 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource9184648729948218183.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource111947795112726598.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Given than Deivis wants to complete a form telling us about him and his location
-| firtsname | lastname | email | monthBirth | dayBirth | yearBirth |
-| Deivis | Miranda | deivis@gmail.com | May | 5 | 1992 |" width="1366"/>
-                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Deivis open up" width="1366"/>
-                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Deivis opens the Choucair academy page" width="1366"/>
-                <img src="8edb68178f6ea39c40001f5cf9f46d9142d4a008ae6833508efa0b4d2d7f37c3.png" title=" Deivis open up (completed)" width="1366"/>
+                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Given than Deivis wants to complete a form telling us about him and his location
+| firtsname | lastname | email | monthBirth | dayBirth | yearBirth | country | city | postal |
+| Deivis | Miranda | deivis@gmail.com | May | 5 | 1992 | Colombia | Barranquilla, Atlantico, Colombia | 11151 |" width="1366"/>
+                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Deivis open up" width="1366"/>
+                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Deivis opens the Choucair academy page" width="1366"/>
+                <img src="812195089107069d226af878fe85b59749f96e27466dedf377a654f5547ea5ea.png" title=" Deivis open up (completed)" width="1366"/>
                 <img src="ec529e60fa1f8f143435ba635fbf9953cb9703d1fb58938d381e9ca240bcf17d.png" title=" Deivis join location" width="1366"/>
                 <img src="ec529e60fa1f8f143435ba635fbf9953cb9703d1fb58938d381e9ca240bcf17d.png" title=" Deivis clicks on button that shows us the form for user registration" width="1366"/>
-                <img src="e2a7ccc7c44558019d361d796504f497c4fddef72fdf01847d5c22376de0f75e.png" title=" Deivis enters 'Deivis' into where we write first name" width="1366"/>
-                <img src="b8b22f9aadbfa0b19dae4056a7a70d84ecd7467e9da024c75300d8194575d2e0.png" title=" Deivis enters 'Miranda' into where we write last names" width="1366"/>
-                <img src="95ff43afe396e506762b714940349c556b7ea5f80161fb736f8c0334e5b66518.png" title=" Deivis enters 'deivis@gmail.com' into where we write last names" width="1366"/>
-                <img src="2ad3478bc00f1e16deaa3115e2924e6b85851a238a8c11bc49225921e0738422.png" title=" Deivis clicks on where we write month birth" width="1366"/>
-                <img src="f58506f033509b0041b57d6758efd6206a016bdafe851cafb9ebdcb34cd5040a.png" title=" Deivis clicks on button that shows us the form to add location" width="1366"/>
-                <img src="bbe45b80b52e13362d13cca9793480686ef8f11db9f52f83759dbf5e19d5ef01.png" title=" Deivis clicks on where we write day birth" width="1366"/>
-                <img src="2da0af82931b8ba5d85ad0b0aa5182119070a7bbf716fa1effc251bee33a0f32.png" title=" Deivis clicks on where we write year birth" width="1366"/>
-                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" Deivis clicks on button that shows us the form to add location" width="1366"/>
-                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" Deivis join location (completed)" width="1366"/>
-                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" Given than Deivis wants to complete a form telling us about him and his location
-| firtsname | lastname | email | monthBirth | dayBirth | yearBirth |
-| Deivis | Miranda | deivis@gmail.com | May | 5 | 1992 | (completed)" width="1366"/>
-                <img src="8c98fa65a0b10fd8e62b095f0f4a83ce0e88447c13fe17e7787a03bc4e8ddc05.png" title=" When she search for the course on the Choucair academy plataform
-| strCourse |
-| Metodologia Bancolombia |: <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="9f27f5f2bcab4f9e9008114f9217d1bf4f0c5831eb613afad85044b9b994485f.png" title=" Deivis enters 'Deivis' into where we write first name" width="1366"/>
+                <img src="0ca2a0bf89c290434f65fe508943285a64e864ca664386e843271fc671ab6860.png" title=" Deivis enters 'Miranda' into where we write last names" width="1366"/>
+                <img src="6e1d7cc08eead8f1f44300a045b7d563c8ab51ba679e320d348a416efedc83ce.png" title=" Deivis enters 'deivis@gmail.com' into where we write last names" width="1366"/>
+                <img src="855800cd0ef7ebc251ec3ec600bea17fafc07840b684248d89f5f4c9ead89c9d.png" title=" Deivis clicks on where we write month birth" width="1366"/>
+                <img src="d61b17daa668c9ac5f54dd86b0f779899de334da744b4281a80dc61749b202ab.png" title=" Deivis clicks on button that shows us the form to add location" width="1366"/>
+                <img src="cc32ff755bd81afe17197eaa9d17f33fcc029a8d4c757dad345cf8a1c2448b7d.png" title=" Deivis clicks on where we write day birth" width="1366"/>
+                <img src="3d6c9bf32071d651a12ab2600c128974d64d8542c5e70fb15071c76359c932eb.png" title=" Deivis clicks on where we write year birth" width="1366"/>
+                <img src="f1b4fb8d679df89d328a779d37f59855bd92cf49cf15230394751d225b468c33.png" title=" Deivis clicks on button that shows us the form to add location" width="1366"/>
+                <img src="e088038dc3bd2f2c0fd5b210eb24da89d50cb3399530f0ba1002c534001b0378.png" title=" Deivis clicks on where we write country locations" width="1366"/>
+                <img src="aa4a4149c31b7f8b287c8592fc62d801b55e064159d77328b98a051ff79a1987.png" title=" Deivis enters '11151' into where we write postal locations" width="1366"/>
+                <img src="a2764520aeb7c60b0f9f4c0e444e233f2b133c82253628c314e72a2f6df4f500.png" title=" Deivis clicks on button that shows us the form to ADD DEVICE" width="1366"/>
+                <img src="a2764520aeb7c60b0f9f4c0e444e233f2b133c82253628c314e72a2f6df4f500.png" title=" Deivis join location (completed)" width="1366"/>
+                <img src="e5ebf8b6423ceea6488265c21d4335a6ab5a6c5569b34cbfcbf706e7f1f90033.png" title=" Given than Deivis wants to complete a form telling us about him and his location
+| firtsname | lastname | email | monthBirth | dayBirth | yearBirth | country | city | postal |
+| Deivis | Miranda | deivis@gmail.com | May | 5 | 1992 | Colombia | Barranquilla, Atlantico, Colombia | 11151 | (completed)" width="1366"/>
+                <img src="0af372ec0bb61a7f027c6ed001dcca657d7230fe3e18a20d5df45cc67b1b8a8b.png" title=" When I want to add my devices
+| osComputer | version | languaOs | typeDevice | model | osMobile |
+| Linux | Ubuntu | Spanish | Xiaomi | Redmi 8 | Android 10 |" width="1366"/>
+                <img src="0af372ec0bb61a7f027c6ed001dcca657d7230fe3e18a20d5df45cc67b1b8a8b.png" title=" Deivis device task" width="1366"/>
+                <img src="0af372ec0bb61a7f027c6ed001dcca657d7230fe3e18a20d5df45cc67b1b8a8b.png" title=" Deivis clicks on input the register type OS computer" width="1366"/>
+                <img src="b2896d5566a5d5a80d6b466fc6fbf998bc0914f0adbbd5ec8e3de9f0bc4db710.png" title=" Deivis clicks on input the register type version computer" width="1366"/>
+                <img src="d54e3d940aa6c475838ababdcfda2c075d45f57805d38c688a4a27155569bfb2.png" title=" Deivis clicks on input the register type languaje computer" width="1366"/>
+                <img src="196fbe15e067cb33886ca48f3a5d234b19b40c740a1651c7fe2347f5e7768780.png" title=" Deivis clicks on input the register os mobile" width="1366"/>
+                <img src="196fbe15e067cb33886ca48f3a5d234b19b40c740a1651c7fe2347f5e7768780.png" title=" Deivis device task (completed)" width="1366"/>
+                <img src="33a19d0e3780ff600ee2a6aa904b08c8cc5eab5c98a82027b45f68ed402ebbc9.png" title=" When I want to add my devices
+| osComputer | version | languaOs | typeDevice | model | osMobile |
+| Linux | Ubuntu | Spanish | Xiaomi | Redmi 8 | Android 10 | (completed)" width="1366"/>
+                <img src="a43eae6ba817f8eeeb9f8190a6e4a911196bccdd23e7c82842a241c02ebad44a.png" title=" Then record all your data
+| password | repeatPassword |
+| Deivisj92@ | Deivisj92@ |" width="1366"/>
+                <img src="a43eae6ba817f8eeeb9f8190a6e4a911196bccdd23e7c82842a241c02ebad44a.png" title=" Deivis password task" width="1366"/>
+                <img src="a43eae6ba817f8eeeb9f8190a6e4a911196bccdd23e7c82842a241c02ebad44a.png" title=" Deivis enters 'Deivisj92@' into where we write Password" width="1366"/>
+                <img src="29abc8022caed43ba14beefb2a2bcd858cf63091a9cac9928575580dbce6b412.png" title=" Deivis enters 'Deivisj92@' into where we write of new Password" width="1366"/>
+                <img src="8c93dc722ced46daf77e60fa937bcdaafea45797d734f28d9459468e19828265.png" title=" Deivis clicks on Accept Term 1" width="1366"/>
+                <img src="5f0afadf1cf6dda6155b81cc35a085cbfe71e7528efbd82af128d8523369a1a3.png" title=" Deivis clicks on Accept Term 2" width="1366"/>
+                <img src="c34e1d76dccfc6de1281d0a119f9c9cb40179785151548b2373e840876ba0176.png" title=" Deivis clicks on Submit dates: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
